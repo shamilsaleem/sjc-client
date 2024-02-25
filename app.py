@@ -10,16 +10,20 @@ async def home():
        web_data = get_attendance(request.cookies.get('username'), request.cookies.get('password'))
        return web_data
    else:
-       return render_template('home.html') 
+       return render_template('home.html', message = '') 
   
 @app.route('/', methods = ['POST']) 
 def login(): 
     if request.method == 'POST': 
         username = request.form['username'] 
         password = request.form['password']
-        resp = app.redirect('/')
-        resp.set_cookie('username', username)
-        resp.set_cookie('password', password)
+        auth_data = requests.post('https://devagiricollege.net/sjc/Home/student', {'username':username, 'password':password})
+        if(auth_data.url=='https://devagiricollege.net/sjc/student/student/dashboard'):
+            resp = app.redirect('/')
+            resp.set_cookie('username', username)
+            resp.set_cookie('password', password)
+        else:
+            resp = render_template('home.html',message = 'invalid username or password.')
     return resp
 
 @app.route('/logout', methods = ['GET']) 
@@ -31,8 +35,7 @@ def logout():
 
 def get_attendance(username, password):
     session = requests.Session()
-    session.post('https://devagiricollege.net/sjc/Home/student', {'username':username, 'password':password}
-                 )
+    session.post('https://devagiricollege.net/sjc/Home/student', {'username':username, 'password':password})
     #getting student data
 
     page1 = session.get('https://devagiricollege.net/sjc/student/student/dashboard')
@@ -133,7 +136,3 @@ head_tag ="""
     }
 </style>
 """
-
-if __name__ == "__main__":
-    from waitress import serve
-    serve(app, host="0.0.0.0", port=8080)
