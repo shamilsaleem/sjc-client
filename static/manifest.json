@@ -1,0 +1,39 @@
+{
+    "name": "SJC Login",
+    "short_name": "SJC Login",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#fdfdfd",
+    "theme_color": "#db4938",
+    "orientation": "portrait-primary",
+    "icons": [
+      {
+        "src": "https://devagiricollege.net/sjc/asset/admin/img/favicon/apple-icon-72x72.png",
+        "type": "image/png", "sizes": "72x72"
+      },
+      {
+        "src": "https://devagiricollege.net/sjc/asset/admin/img/favicon/favicon-96x96",
+        "type": "image/png", "sizes": "96x96"
+      },
+      {
+        "src": "https://devagiricollege.net/sjc/asset/admin/img/favicon/apple-icon-120x120.png",
+        "type": "image/png","sizes": "120x120"
+      },
+      {
+        "src": "https://devagiricollege.net/sjc/asset/admin/img/favicon/apple-icon-144x144.png",
+        "type": "image/png", "sizes": "144x144"
+      },
+      {
+        "src": "https://devagiricollege.net/sjc/asset/admin/img/favicon/apple-icon-152x152.png",
+        "type": "image/png", "sizes": "152x152"
+      },
+      {
+        "src": "/android-chrome-192x192.png",
+        "type": "image/png", "sizes": "192x192"
+      },
+      {
+        "src": "/android-chrome-512x512.png",
+        "type": "image/png", "sizes": "512x512"
+      }
+    ]
+  }

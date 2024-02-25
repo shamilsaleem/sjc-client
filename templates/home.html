@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -10,7 +9,29 @@
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="shortcut icon" href="https://devagiricollege.net/sjc/asset/admin/img/logo.png">
 
+  <link rel="manifest" href="/static/manifest.json" />
+  <!-- ios support -->
+  <link rel="apple-touch-icon" sizes="57x57"
+    href="https://devagiricollege.net/sjc/asset/admin/img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60"
+    href="https://devagiricollege.net/sjc/asset/admin/img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72"
+    href="https://devagiricollege.net/sjc/asset/admin/img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76"
+    href="https://devagiricollege.net/sjc/asset/admin/img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114"
+    href="https://devagiricollege.net/sjc/asset/admin/img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120"
+    href="https://devagiricollege.net/sjc/asset/admin/img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144"
+    href="https://devagiricollege.net/sjc/asset/admin/img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152"
+    href="https://devagiricollege.net/sjc/asset/admin/img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180"
+    href="https://devagiricollege.net/sjc/asset/admin/img/favicon/apple-icon-180x180.png">
 
+  <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
+  <meta name="theme-color" content="#db4938" />
 
   <link rel="stylesheet" href="https://devagiricollege.net/sjc/asset/admin/css/imag_privew/neon-forms.css">
 
@@ -20,12 +41,14 @@
 
   <link rel="stylesheet" href="https://devagiricollege.net/sjc/asset/admin/css/data_table/dataTables.bootstrap.css">
 
-  <link rel="stylesheet" href="https://devagiricollege.net/sjc/asset/admin/css/datepicker/datepicker3.css"> <!-- need -->
+  <link rel="stylesheet" href="https://devagiricollege.net/sjc/asset/admin/css/datepicker/datepicker3.css">
+  <!-- need -->
   <!-- bootstrap datepicker -->
 
   <link rel="stylesheet" href="https://devagiricollege.net/sjc/asset/admin/css/fullcalendar/fullcalendar.min.css">
 
-  <link rel="stylesheet" href="https://devagiricollege.net/sjc/asset/admin/css/fullcalendar/fullcalendar.print.css" media="print">
+  <link rel="stylesheet" href="https://devagiricollege.net/sjc/asset/admin/css/fullcalendar/fullcalendar.print.css"
+    media="print">
 
   <link rel="stylesheet" href="https://devagiricollege.net/sjc/asset/admin/css/select2/select2.min.css">
 
@@ -33,6 +56,7 @@
 
   <link rel="stylesheet" href="https://devagiricollege.net/sjc/asset/admin/css/tholi/_all-skins.min.css">
   <script src="https://devagiricollege.net/sjc/asset/admin/js/jQuery/jquery-2.2.3.min.js"></script>
+  <script src="/static/app.js"></script>
 </head>
 
 <body style="height: auto;">
@@ -58,7 +82,8 @@
       <meta http-equiv="refresh" content="0.0;url=https://devagiricollege.net/sjc/home/jsdisabled">
     </noscript>
 
-    <div class="content-wrapper" style="margin-left: 0px;background-image: url('https://devagiricollege.net/sjc/asset/demo/s1.jpg');background-repeat: no-repeat;background-size: cover;">
+    <div class="content-wrapper"
+      style="margin-left: 0px;background-image: url('https://devagiricollege.net/sjc/asset/demo/s1.jpg');background-repeat: no-repeat;background-size: cover;">
       <!-- Content Header (Page header) -->
       <section class="content-header">
         <h1>
@@ -82,10 +107,12 @@
             <div class="login-box">
 
 
-              <div class="login-box-body" style="height:auto; margin-bottom:20px; margin-top:20px;border-radius: 25px;" align="center">
+              <div class="login-box-body" style="height:auto; margin-bottom:20px; margin-top:20px;border-radius: 25px;"
+                align="center">
                 <p class="login-box-msg" style="margin-bottom: 10px;">UNOFFICIAL OPEN-SOURCE CLIENT</p>
                 <p>
-                                      <img src="https://devagiricollege.net/sjc/asset/demo/logo.jpg" style="width:100px" alt="devagiri logo"><br>
+                  <img src="https://devagiricollege.net/sjc/asset/demo/logo.jpg" style="width:100px"
+                    alt="devagiri logo"><br>
                 <h4><strong> ST. JOSEPH'S COLLEGE (AUTONOMOUS),
                     DEVAGIRI, CALICUT
                   </strong></h4>
@@ -100,20 +127,27 @@
                 <form action="" method="post" name="wakin">
                   <div class="form-group has-feedback">
                     <input type="text" autocomplete="off" name="username" class="form-control" placeholder="User name">
-                                      </div>
+                  </div>
 
                   <div class="form-group has-feedback">
-                    <input type="password" autocomplete="off" name="password" class="form-control" placeholder="Password">
-                                                          </div>
+                    <input type="password" autocomplete="off" name="password" class="form-control"
+                      placeholder="Password">
+                  </div>
 
 
                   <div class="row">
                     <div class="col-xs-12">
-                      <button type="submit" class="btn btn-primary btn-block btn-flat" style="width:100%;margin-bottom: 20px;">Sign In</button>
-                      <p class="login-box-msg" style="margin-bottom: 0px; margin-top: 0px;">Use this web client only for checking attendance.</p>
-                      <p class="login-box-msg" style="margin-bottom: 0px; margin-top: 0px;">Your login credentials are stored within your browser.</p>
-                      <p class="login-box-msg" style="margin-bottom: 0px; margin-top: 0px;"><a href="https://devagiricollege.net/sjc/Home/student">Official Site</a> • <a href="https://github.com/shamilsaleem/sjc-client">Source Code</a></p>
-                      <p class="login-box-msg" style="margin-bottom: 0px; margin-top: 0px;">Made with ❤️ by <a href="https://www.instagram.com/shamil.saleem">😶‍🌫️</a></p>
+                      <button type="submit" class="btn btn-primary btn-block btn-flat"
+                        style="width:100%;margin-bottom: 20px;">Sign In</button>
+                      <p class="login-box-msg" style="margin-bottom: 0px; margin-top: 0px;">Use this web client only for
+                        checking attendance.</p>
+                      <p class="login-box-msg" style="margin-bottom: 0px; margin-top: 0px;">Your login credentials are
+                        stored within your browser.</p>
+                      <p class="login-box-msg" style="margin-bottom: 0px; margin-top: 0px;"><a
+                          href="https://devagiricollege.net/sjc/Home/student">Official Site</a> • <a
+                          href="https://github.com/shamilsaleem/sjc-client">Source Code</a></p>
+                      <p class="login-box-msg" style="margin-bottom: 0px; margin-top: 0px;">Made with ❤️ by <a
+                          href="https://www.instagram.com/shamil.saleem">😶‍🌫️</a></p>
                     </div>
 
 
@@ -196,10 +230,10 @@
   <script src="https://devagiricollege.net/sjc/asset/admin/js/fullcalendar/fullcalendar.min.js"></script>
   <!-- Page specific script -->
 
-  
+
   <script>
-    $(document).ready(function() {
-      $("#deleteconf").click(function() {
+    $(document).ready(function () {
+      $("#deleteconf").click(function () {
         var len = $(".check:checked").length;
         if (len > 0) {
           $('#head1').html('Delete?');
@@ -214,8 +248,8 @@
   </script>
 
   <script>
-    $(document).ready(function() {
-      $("#sendmessage").click(function() {
+    $(document).ready(function () {
+      $("#sendmessage").click(function () {
         var len = $(".checkmsg:checked").length;
         if (len > 0) {
           $('#head2').html('Send Message');
@@ -229,12 +263,12 @@
   </script>
 
   <script>
-    $(function() {
+    $(function () {
 
       /* initialize the external events
        -----------------------------------------------------------------*/
       function ini_events(ele) {
-        ele.each(function() {
+        ele.each(function () {
 
 
           // it doesn't need to have a start or end
@@ -278,53 +312,53 @@
         },
         //Random default events
         events: [{
-            title: 'All Day Event',
-            start: new Date(y, m, 1),
-            backgroundColor: "#f56954", //red
-            borderColor: "#f56954" //red
-          },
-          {
-            title: 'Long Event',
-            start: new Date(y, m, d - 5),
-            end: new Date(y, m, d - 2),
-            backgroundColor: "#f39c12", //yellow
-            borderColor: "#f39c12" //yellow
-          },
-          {
-            title: 'Meeting',
-            start: new Date(y, m, d, 10, 30),
-            allDay: false,
-            backgroundColor: "#0073b7", //Blue
-            borderColor: "#0073b7" //Blue
-          },
-          {
-            title: 'Lunch',
-            start: new Date(y, m, d, 12, 0),
-            end: new Date(y, m, d, 14, 0),
-            allDay: false,
-            backgroundColor: "#00c0ef", //Info (aqua)
-            borderColor: "#00c0ef" //Info (aqua)
-          },
-          {
-            title: 'Birthday Party',
-            start: new Date(y, m, d + 1, 19, 0),
-            end: new Date(y, m, d + 1, 22, 30),
-            allDay: false,
-            backgroundColor: "#00a65a", //Success (green)
-            borderColor: "#00a65a" //Success (green)
-          },
-          {
-            title: 'Click for Google',
-            start: new Date(y, m, 28),
-            end: new Date(y, m, 29),
-            url: 'http://google.com/',
-            backgroundColor: "#3c8dbc", //Primary (light-blue)
-            borderColor: "#3c8dbc" //Primary (light-blue)
-          }
+          title: 'All Day Event',
+          start: new Date(y, m, 1),
+          backgroundColor: "#f56954", //red
+          borderColor: "#f56954" //red
+        },
+        {
+          title: 'Long Event',
+          start: new Date(y, m, d - 5),
+          end: new Date(y, m, d - 2),
+          backgroundColor: "#f39c12", //yellow
+          borderColor: "#f39c12" //yellow
+        },
+        {
+          title: 'Meeting',
+          start: new Date(y, m, d, 10, 30),
+          allDay: false,
+          backgroundColor: "#0073b7", //Blue
+          borderColor: "#0073b7" //Blue
+        },
+        {
+          title: 'Lunch',
+          start: new Date(y, m, d, 12, 0),
+          end: new Date(y, m, d, 14, 0),
+          allDay: false,
+          backgroundColor: "#00c0ef", //Info (aqua)
+          borderColor: "#00c0ef" //Info (aqua)
+        },
+        {
+          title: 'Birthday Party',
+          start: new Date(y, m, d + 1, 19, 0),
+          end: new Date(y, m, d + 1, 22, 30),
+          allDay: false,
+          backgroundColor: "#00a65a", //Success (green)
+          borderColor: "#00a65a" //Success (green)
+        },
+        {
+          title: 'Click for Google',
+          start: new Date(y, m, 28),
+          end: new Date(y, m, 29),
+          url: 'http://google.com/',
+          backgroundColor: "#3c8dbc", //Primary (light-blue)
+          borderColor: "#3c8dbc" //Primary (light-blue)
+        }
         ],
         editable: true,
         droppable: true, // this allows things to be dropped onto the calendar !!!
-        drop: function(date, allDay) { // this function is called when something is dropped
+        drop: function (date, allDay) { // this function is called when something is dropped
 
           // retrieve the dropped element's stored Event Object
           var originalEventObject = $(this).data('eventObject');
@@ -355,7 +389,7 @@
       var currColor = "#3c8dbc"; //Red by default
       //Color chooser button
       var colorChooser = $("#color-chooser-btn");
-      $("#color-chooser > li > a").click(function(e) {
+      $("#color-chooser > li > a").click(function (e) {
         e.preventDefault();
         //Save color
         currColor = $(this).css("color");
@@ -365,7 +399,7 @@
           "border-color": currColor
         });
       });
-      $("#add-new-event").click(function(e) {
+      $("#add-new-event").click(function (e) {
         e.preventDefault();
         //Get value and make sure it is not null
         var val = $("#new-event").val();
@@ -398,7 +432,7 @@
   <!--for data table part abey-->
 
   <script>
-    $(function() {
+    $(function () {
       $("#example1").DataTable();
       $('#example2').DataTable({
         "paging": true,
@@ -413,8 +447,8 @@
 
   <!--for data table part abey-->
 
-    <script>
-    $(function() {
+  <script>
+    $(function () {
       //Initialize Select2 Elements
       $(".select2").select2();
 
@@ -477,18 +511,18 @@
       });
       //Date range as a button
       $('#daterange-btn').daterangepicker({
-          ranges: {
-            'Today': [moment(), moment()],
-            'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-            'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-            'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-            'This Month': [moment().startOf('month'), moment().endOf('month')],
-            'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
-          },
-          startDate: moment().subtract(29, 'days'),
-          endDate: moment()
+        ranges: {
+          'Today': [moment(), moment()],
+          'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+          'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+          'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+          'This Month': [moment().startOf('month'), moment().endOf('month')],
+          'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
         },
-        function(start, end) {
+        startDate: moment().subtract(29, 'days'),
+        endDate: moment()
+      },
+        function (start, end) {
           $('#daterange-btn span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
 
 
@@ -529,7 +563,7 @@
     });
   </script>
   <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
       $('[data-toggle="tooltip"]').tooltip();
     });
   </script>
@@ -557,12 +591,6 @@
 
     </div>
   </div>
-
-
-
-
-
-
 </body>
 
 </html>
