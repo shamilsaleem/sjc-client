@@ -5,12 +5,12 @@ from bs4 import BeautifulSoup
 app = Flask(__name__) 
   
 @app.route('/', methods = ['GET']) 
-async def home(): 
-   if(request.cookies.get('username') and request.cookies.get('password')):
-       web_data = get_attendance(request.cookies.get('username'), request.cookies.get('password'))
-       return web_data
-   else:
-       return render_template('home.html', message = '') 
+def home(): 
+    if(request.cookies.get('username') and request.cookies.get('password')):
+        web_data = get_attendance(request.cookies.get('username'), request.cookies.get('password'))
+        return web_data
+    else:
+        return render_template('home.html', message = '') 
   
 @app.route('/', methods = ['POST']) 
 def login(): 
