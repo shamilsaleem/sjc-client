@@ -64,6 +64,15 @@ def get_attendance(username, password):
     <a href="/logout">
     <button type="button" class="btn btn-danger" style="margine-bottom:3px;">Logout</button>
     </a>
+    <br>
+    <p class="login-box-msg" style="margin-bottom: 0px; margin-top: 5px;">Your login credentials are
+                        stored within your browser.</p>
+                      <p class="login-box-msg" style="margin-bottom: 0px; margin-top: 0px;"><a
+                          href="https://devagiricollege.net/sjc/Home/student">Official Site</a> • <a
+                          href="https://github.com/shamilsaleem/sjc-client">Source Code</a></p>
+                      <p class="login-box-msg" style="margin-bottom: 0px; margin-top: 0px;">Made with ❤️ by <a
+                          href="https://www.instagram.com/shamil.saleem">🫠</a></p>
+                    
     </div>
     <body>'''
 
