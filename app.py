@@ -25,8 +25,8 @@ def login():
         auth_data = requests.post('https://devagiricollege.net/sjc/Home/student', {'username':username, 'password':password})
         if(auth_data.url=='https://devagiricollege.net/sjc/student/student/dashboard'):
             resp = app.redirect('/')
-            resp.set_cookie('username', username, max_age=None, expires=None)
-            resp.set_cookie('password', password, max_age=None, expires=None)
+            resp.set_cookie('username', username, max_age=31536000)
+            resp.set_cookie('password', password, max_age=31536000)
         else:
             resp = render_template('home.html',message = 'invalid username or password.')
     return resp
