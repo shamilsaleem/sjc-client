@@ -5,7 +5,12 @@ from bs4 import BeautifulSoup
 app = Flask(__name__) 
   
 @app.route('/', methods = ['GET']) 
-def home(): 
+def home():
+  resp = render_template('loading.html')
+  return resp
+ 
+@app.route('/home', methods = ['GET']) 
+def home1():
     if(request.cookies.get('username') and request.cookies.get('password')):
         web_data = get_attendance(request.cookies.get('username'), request.cookies.get('password'))
         return web_data
@@ -74,7 +79,37 @@ head_tag ="""
 
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="shortcut icon" href="https://devagiricollege.net/sjc/asset/admin/img/logo.png">
+  
+  
+  
+  <link rel="manifest" href="/static/manifest.json" />
+  <!-- ios support -->
+  <link rel="apple-touch-icon" sizes="57x57"
+    href="https://devagiricollege.net/sjc/asset/admin/img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60"
+    href="https://devagiricollege.net/sjc/asset/admin/img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72"
+    href="https://devagiricollege.net/sjc/asset/admin/img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76"
+    href="https://devagiricollege.net/sjc/asset/admin/img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114"
+    href="https://devagiricollege.net/sjc/asset/admin/img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120"
+    href="https://devagiricollege.net/sjc/asset/admin/img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144"
+    href="https://devagiricollege.net/sjc/asset/admin/img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152"
+    href="https://devagiricollege.net/sjc/asset/admin/img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180"
+    href="https://devagiricollege.net/sjc/asset/admin/img/favicon/apple-icon-180x180.png">
+  <link rel="icon" sizes="192x192" href="/static/android-chrome-192x192.png">
+  <link rel="icon" sizes="512x512" href="/static/android-chrome-512x512.png">
 
+  <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
+  <meta name="theme-color" content="#db4938" />
+  
+  <script src="/static/app.js"></script>
+  
 
 
   <link rel="stylesheet" href="https://devagiricollege.net/sjc/asset/admin/css/imag_privew/neon-forms.css">
