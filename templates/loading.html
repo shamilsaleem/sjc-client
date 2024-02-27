@@ -14,10 +14,16 @@
   animation: spin 2s linear infinite;
 }
 .container {
-  padding-top: 70%;
+  position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center
+}
+.loader{
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 /* Safari */

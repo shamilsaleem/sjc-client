@@ -86,7 +86,7 @@ head_tag ="""
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>ST. JOSEPH'S COLLEGE (AUTONOMOUS), DEVAGIRI, CALICUT</title>
 
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <meta content="width=device-width, initial-scale=1, user-scalable=yes" name="viewport">
   <link rel="shortcut icon" href="https://devagiricollege.net/sjc/asset/admin/img/logo.png">
   
   

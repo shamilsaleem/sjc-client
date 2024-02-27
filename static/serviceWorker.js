@@ -1,7 +1,6 @@
 const sjclogin = "sjc-login-site-v1"
 const assets = [
-  "/",
-  "https://devagiricollege.net/sjc/asset/demo/s1.jpg"
+
 ]
 
 self.addEventListener("install", installEvent => {
